@@ -14,16 +14,32 @@
 --link-2: 15px;
 --text_card: 10px;
 --formulaire: 15px;
---menu1: 28px;
---menu2: 28px;
+--menu: 28px;
 --title_site: 47px;
 --legende: 12px;
 --title: 25px;
 --text: 13px;
---title_header: 28px;
---title2: 20px;
+--h2: 20px;
 --citations: 15px;
---subtitle2: 18px;
+--h3: 18px;
 --header_title2: 30px;
 --header_subtitle: 30px;
+
+
+/* Font family */
+--font-title-site: 'Marck Script', cursive;
+--font-text: 'PT Sans', sans-serif;
+--font-title: 'PT Serif', serif;
+
+
+/* Font variantes */
+--letter-spacing: 0.05em;
+
+/* Espaces */
+--space1x: 8px;
+--space2x: 16px;
+--space3x: 24px;
+--space4x: 48px;
+--space5x: 80px;
+
 }

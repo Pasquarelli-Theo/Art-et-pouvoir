@@ -1,6 +1,5 @@
 /* Code fourni par Google Font pour l'utilisation de ces polices de caractères */
-@import url('https://fonts.googleapis.com/css2?family=Spinnaker:ital,wght@0,300;0,700;1,300;1,700&family=Space+Mono:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen%20Kurenaido:ital,wght@0,300;0,700;1,300;1,700&family=Space+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Vendors */
 @import "vendors/normalize.css";
@@ -8,20 +7,18 @@
 /* Utils */
 @import "utils/variables.css";
 
+/* Pages */
+@import "pages/contact.css";
+
 /* Base */
 @import "base/main.css";
 @import "base/media.css";
 
 /* Layout */
-@import "layout/header.css";
+@import "./layout/header.css";
+@import url("/src/css/layout/header.css");
 @import "layout/footer.css";
-@import "layout/section.css";
-@import "layout/section-presentation.css";
 
 /* Components */
 @import "components/menu.css";
-@import "components/hero.css";
-@import "components/infos.css";
 @import "components/button.css";
-@import "components/card.css";
-@import "components/carousel.css";

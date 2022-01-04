@@ -1,0 +1,20 @@
+.header {
+    background-image: url("/public/img/Photo_accueil.webp");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space1x);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header__end {
+    display: flex;
+    gap: var(--space2x);
+  }
+  
+  .header__logo {
+    display: block;
+  }
