@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art & Pouvoir - L'art à New York</title>
+
+    <!-- Déclaration de la feuille de style -->
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+ <!-- Entête de la page -->
+
+ <div id="header">
+    <header class="header" 
+                :class="atTop && 'header--atTop'"
+                @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+    
+          <div class="header__start">
+              <img src="public/icones/building_logo.svg" alt="Logo du site Art & Pouvoir">
+          <h1>Art & Pouvoir</h1>
+          <h2>Le Loup de Wall Street
+             <br>Le film</h2>
+             <img src="public/icones/icone_film.svg" alt="Icone de film">
+             <p>Martin Scorsese</p>
+          </div>
+    
+          <div class="header__end">
+    
+          <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+              <span class="menu-btn__bar"></span>
+          </button>
+
+          <!-- Menu principal -->
+  
+          <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Article_Central_Park.html">Central Park</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Article_Art_NY.html">L'art à New York</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Autres_projets.html">Autres projets</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Contact.html">Contact</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+            </ul>
+          </nav>
+    
+    <!-- Fin du menu principal -->
+            
+        </div>
+        </header>
+    
+        <!-- Fin de l'entête de la page -->
+
+        <!-- Contenu principal -->
+
+        <main>
+
+
+
+
+
+
+        </main>
+
+        <!-- Fin du contenu principal -->
+
+        <!-- Pied de page-->
+
+<footer class="footer">
+<p>PierrePolJ</p>
+
+<div>
+    <p>Me suivre : </p>
+    <ul class="footer__list list-unstyled">
+        <li><a target="_blank" href="https://facebook.com" aria-label="facebook"><img src="public/icones/fb.svg" alt="icone facebook"></a></li>
+        <li><a target="_blank" href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icone twitter"></a></li>
+        <li><a target="_blank" href="https://instagram.com" aria-label="instagram"><img src="public/icones/insta.svg" alt="icone instagram"></a></li>
+        <li><a target="_blank" href="http://mmimontbeliard.com/" aria-label="mmi"><img src="public/icones/icon_mmi.svg" alt="icone MMI Montbéliard"></a></li>
+    </ul>
+</div>
+
+<p>Pour me contacter par mail, cliquez ici</p>
+<img src="public/icones/Line_footer.svg" alt="Ligne de séparation jaune">
+<p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMi de Montbéliard.</p>
+
+
+
+</body>
+</html>

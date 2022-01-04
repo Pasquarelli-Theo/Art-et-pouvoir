@@ -1,0 +1,29 @@
+:root{
+/* Color styles */
+--yellow:        rgba(243, 199, 54, 1);
+--dark-gray:     rgba(112, 112, 112, 1);
+--grey:          rgba(245, 241, 241, 1);
+--beige:         rgba(251, 234, 178, 1);
+--dark_gray_2:   rgba(78, 78, 78, 1);
+
+/* Text-size styles */
+--title_card: 15px;
+--subtitle-card: 16px;
+--link: 10px;
+--footer: 10px;
+--link-2: 15px;
+--text_card: 10px;
+--formulaire: 15px;
+--menu1: 28px;
+--menu2: 28px;
+--title_site: 47px;
+--legende: 12px;
+--title: 25px;
+--text: 13px;
+--title_header: 28px;
+--title2: 20px;
+--citations: 15px;
+--subtitle2: 18px;
+--header_title2: 30px;
+--header_subtitle: 30px;
+}

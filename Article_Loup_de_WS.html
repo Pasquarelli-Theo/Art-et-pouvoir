@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art & Pouvoir - Article Le Loup de Wall Street</title>
+
+    <!-- Déclaration de la feuille de style -->
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+ <!-- Entête de la page -->
+
+ <div id="header">
+    <header class="header" 
+                :class="atTop && 'header--atTop'"
+                @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+    
+          <div class="header__start">
+              <img src="public/icones/building_logo.svg" alt="Logo du site Art & Pouvoir">
+          <h1>Art & Pouvoir</h1>
+          <h2>Le Loup de Wall Street
+             <br>Le film</h2>
+             <img src="public/icones/icone_film.svg" alt="Icone de film">
+             <p>Martin Scorsese</p>
+          </div>
+    
+          <div class="header__end">
+    
+          <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+              <span class="menu-btn__bar"></span>
+          </button>
+
+          <!-- Menu principal -->
+  
+          <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+              <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Article_Central_Park.html">Central Park</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Article_Art_NY.html">L'art à New York</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Autres_projets.html">Autres projets</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+              <li class="menu__item"><a class="menu__link" href="Contact.html">Contact</a></li>
+              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+            </ul>
+          </nav>
+    
+    <!-- Fin du menu principal -->
+            
+    
+    
+        </div>
+        </header>
+    
+        <!-- Fin de l'entête de la page -->
+
+        <!-- Contenu principal -->
+
+        <main>
+
+        <p>« Le Loup de Wall Street ». Tel est surnommé l’escroc Jordan Belfort dans les années 1990 à New York. C’est ce personnage qui est mis en scène dans le film fascinant de Martin Scorsese de 2013. Pour le courtier de Wall Street, gloire, argent, femmes et drogue deviennent une obsession. Avec le FBI à ses trousses, Jordan va tout faire pour ne pas se faire prendre…</p>
+        <img src="public/img/le_loup_de_wall_street.webp" alt="Affiche du film Le Loup de Wall Street">
+        <figcaption>Affiche du film Le Loup de Wall Street sorti en
+           <br> décembre 2013.</figcaption>
+        <br>
+           <h2>RÉSUMÉ DU FILM</h2>
+        <img src="public/icones/Line_grey.svg" alt="Ligne de séparation grise">
+        <br>
+        <h3>Les débuts du protagoniste</h3>
+        <p>Dans les années 1980, Jordan Belfort travaille en tant que courtier dans l’entreprise Rothschild. Il suit le modèle de Mark Hanna, le patron de l’entreprise New yorkaise. Jordan obtient le 19 octobre 1987 sa licence de courtier. Mais l’entreprise fait faillite lors du krach boursier et Jordan est licencié.
+        <br><br> Il se tourne alors vers une autre compagnie de courtage à Long Island. Jordan utilise son savoir et parvient à gagner de plus en plus d’argent. Il rencontre ensuite Donnie Azoff avec qui il va s’associer. Ils créent leur entreprise de courtage : Stratton Oakmon qui spécule selon une méthode illégale. Mais c’est le début du déclin pour Jordan, il plonge dans la drogue et les prostituées. Stratton Oakmon prend de plus en plus d’ampleur et compte des centaines d’employés.
+        <br><br> Jordan tombe ensuite amoureux de Naomi Lapaglia, il quitte alors sa femme.</p>
+        <br>  
+        <h3>Une obsession : l'argent</h3>
+        <p>Et surtout. N'oubliez pas que trop n'est
+            <br>jamais assez !</p>
+        <p>Tel était le discours de Jordan pour motiver ses
+            troupes.</p>
+        <img src="public/icones/Line_yellow-fine.svg"  alt="Ligne de séparation jaune">
+        <p>La société Madden est introduite en bourse par Jordan et Donnie. Ils gagnent de cette manière des millions de dollars mais un problème se pose : la surveillance par un agent du FBI. Ils décident de cacher leur argent en Suisse. Cependant, le compte est au nom de la tante de Naomi, Emma, qui possède un passeport européen. 20 millions de dollars sont placés sur ce compte.
+        <br><br> Max, le père de Jordan tente de convaincre Jordan de quitter son entreprise. Ainsi, il pourrait éviter la prison et profiter de sa famille. Mais sa soif d’argent n’est jamais assouvie. Au dernier moment Jordan décide de continuer à la tête de Stratton. Il vient d’être papa d’un second enfant, un garçon.</p>
+        <img src="public/img/logo_stratton.webp" alt="Logo de Stratton Oakmont">
+        <figcaption>Logo de Stratton Oakmont, entreprise montée par
+        <br>    Jordan et Donnie.</figcaption>
+        <br>
+        <h3>La multiplication des ennuis</h3>
+        <p>Quelques mois plus tard, alors que Jordan et Naomi sont en vacances en Italie, tante Emma décède. Jordan doit alors récupérer les 20 millions de dollars en Suisse. Mais en direction de Monaco, son bateau est pris dans une tempête et fait naufrage. Cela l’empêche d’arriver à temps à la banque.</p>
+        <p>Deux ans plus tard, Jordan est arrêté par le FBI. Il risque 20 ans de prison pour fraude. Il peut cependant atténuer sa peine s’il dénonce ses collègues. Voulant choisir cette dernière option, il l’annonce à sa femme Naomi. Mais elle lui fait savoir qu’elle veut divorcer et avoir la garde des enfants. Jordan s’énerve et prend de la drogue alors qu’il avait arrêté depuis plusieurs années. Il tente également de partir avec sa fille après avoir frappé sa femme, en vain.</p>
+        <br> 
+        <h3>Une annonce bouleversante</h3>
+        <p>Nous retournons quelques jours auparavant, à Paris. Alice se rend chez un spécialiste qui lui apprend qu’elle est atteinte d’une forme précoce d’Alzheimer. Seymour, au courant pour sa maladie, cherche à l’aider rapidement. Il la convainc de se faire soigner au Segabo Cottage Hospital, centre de recherche de pointe.</p>
+        <img src="public/img/visuel_central_park_livre2.webp" alt="Couverture collector du roman Central Park">
+        <figcaption>Première de couverture collector du roman.</figcaption>
+        <br>
+        <h3>La chute de Stratton</h3>
+        <p>Jordan accepte le contrat du FBI et porte un micro. Il se rend d’abord vers Donnie et l’informe qu’il est sur écoute sur un papier. Mais ce papier est récupéré par le FBI, ce qui vaut à Jordan d’aller en prison sur-le-champ. La plupart de ses collègues sont arrêtés et Stratton ferme.
+        <br>Jordan est condamné à 3 ans de prison. Une fois sa peine purgée, Jordan va transmettre ses techniques de vente lors de conférences.</p>
+        <img src="public/img/Img_video.webp">
+        <figcaption>Bande annonce du Loup de Wall Street en version
+            <br>française.</figcaption>
+        <br> 
+        <h3>En quelques mots …</h3>
+        <p>À travers ce film de 3 heures, Martin Scorsese nous présente un personnage plutôt particulier : Jordan Belfort. À la fois manipulateur, amoral, égoïste et mégalomane, le protagoniste suscite paradoxalement l'intérêt du spectateur. Tout comme dans Central Park de G.Musso, l’action se déroule à New York, plus particulièrement à Manhattan. C'est une occasion de s'immerger à nouveau dans cette ville multiculturelle.</p>
+        
+        <br>
+        
+        <h2>D'AUTRES FILMS DE MARTIN SCORSESE :</h2>
+       <img src="public/icones/Line_yellow.svg" alt="Ligne de séparation jaune">
+       <img src="public/img/" alt="Affiche du film Casino">
+       <figcaption> Casino </figcaption>
+       <img src="public/img/" alt="Affiche du film Les Affranchis">
+       <figcaption> Les Affrranchis </figcaption>
+       <img src="public/img/" alt="Affiche du film Infiltrés">
+       <figcaption> Infiltrés </figcaption>
+       <img src="public/img/" alt="Affiche du film Gang of New York">
+       <figcaption> Gang of New<br>York </figcaption>
+       <img src="public/img/" alt="Affiche du film Taxi Driver">
+       <figcaption> Taxi Driver </figcaption>
+       <img src="public/img/" alt="Affiche du film Shutter Island">
+       <figcaption> Shutter Island </figcaption>
+       <img src="public/img/" alt="Affiche du film Raging Bull">
+       <figcaption> Raging Bull </figcaption>
+       <img src="public/img/" alt="Affiche du film "Mean Street>
+       <figcaption> Mean Street </figcaption>
+       <img src="public/img/" alt="Affiche du film Les Nerfs à vif">
+       <figcaption> Les Nerfs à vif </figcaption>
+
+        <p>Pour en savoir plus sur les meilleurs films de
+           <br> Martin Scorsese, cliquez ici.</p>
+        <p>Ne manquez pas le mini-guide sur New York, qui
+          <br>  s'avèrera très pratique pour vous !</p>
+        <p>LIRE</p>
+
+        </main>
+
+            <!-- Fin du contenu principal -->
+
+            <!-- Pied de page-->
+
+<footer class="footer">
+    <p>PierrePolJ</p>
+
+    <div>
+        <p>Me suivre : </p>
+        <ul class="footer__list list-unstyled">
+            <li><a target="_blank" href="https://facebook.com" aria-label="facebook"><img src="public/icones/fb.svg" alt="icone facebook"></a></li>
+            <li><a target="_blank" href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icone twitter"></a></li>
+            <li><a target="_blank" href="https://instagram.com" aria-label="instagram"><img src="public/icones/insta.svg" alt="icone instagram"></a></li>
+            <li><a target="_blank" href="http://mmimontbeliard.com/" aria-label="mmi"><img src="public/icones/icon_mmi.svg" alt="icone MMI Montbéliard"></a></li>
+        </ul>
+    </div>
+
+    <p>Pour me contacter par mail, cliquez ici</p>
+    <img src="public/icones/Line_footer.svg" alt="Ligne de séparation jaune">
+    <p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMi de Montbéliard.</p>
+
+
+
+    </body>
+    </html>

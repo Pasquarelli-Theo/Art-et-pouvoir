@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art&Pouvoir</title>
+
+    <!-- Déclaration de la feuille de style -->
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+<body>
+    
+    <!-- Entête de la page -->
+
+    <div id="header">
+<header class="header" 
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+
+      <div class="header__start">
+      <img src="public/img/Photo_accueil.webp" alt="Photo d'une rue de New York">
+      <h1><Art ></h1>
+      </div>
+
+      <div class="header__end">
+
+      <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+      </button>
+
+                <!-- Menu principal -->
+  
+                <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                      <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
+                      <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+                      <li class="menu__item"><a class="menu__link" href="Article_Central_Park.html">Central Park</a></li>
+                      <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+                      <li class="menu__item"><a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street</a></li>
+                      <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+                      <li class="menu__item"><a class="menu__link" href="Article_Art_NY.html">L'art à New York</a></li>
+                      <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+                      <li class="menu__item"><a class="menu__link" href="Autres_projets.html">Autres projets</a></li>
+                      <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+                      <li class="menu__item"><a class="menu__link" href="Contact.html">Contact</a></li>
+                      <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
+                    </ul>
+                  </nav>
+            
+            <!-- Fin du menu principal -->
+        
+
+
+    </div>
+    </header>
+
+    <!-- Fin de l'entête de la page -->
+</body>
+</html>
