@@ -12,6 +12,58 @@ body {
   }
 
 h1 {
+  font-family: var(--font-title-site);
+  color: var(--yellow);
+  text-align: center;
+  position: relative;
+  top: 300px;
+  width: 12em
+}
+
+h2{
+  color: var(--yellow);
+}
+
+h3{
+  color: var(--yellow);
+  font-family: var(--h3);
+}
+
+.header__title{
+  font-size: var(--header_title2);
+  text-align: center;
+  width: 12em
+}
+
+.header__title2{
+  text-align: center;
+  position: relative;
+  top: 55px;
+  font-size: var(--header_title2);
+  width: 12em
+}
+
+.header__subtitle{
+  text-align: center;
+  position: relative;
+  top: 0px;
+  font-size: var(--header_subtitle);
+  width: 12em
+}
+
+.home__title{
+  color: var(--dark-gray);
+  text-align: center;
+  width: 18em
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__home{
   font-size: var(--title_site);
   font-family: var(--font-title-site);
   color: var(--yellow);
@@ -19,8 +71,32 @@ h1 {
   width: 6em
 }
 
+/* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .list-unstyled {
   list-style: none;
   margin:0;
   padding: 0;
+}
+
+/* Classe générique permettant de définir les marges sur les cotés */
+.container {
+  padding-left: var(--space3x);
+  padding-right: var(--space3x);
+}
+
+/* Bug IOS
+=> L'overflow doit être appliqué sur l'élément body ET html
+pour faire disparaître le scroll sur safari IOS */
+.noscroll,
+.noscroll body {
+  overflow: hidden;
 }

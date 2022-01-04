@@ -2,3 +2,27 @@ img {
     max-width: 100%;
     height: auto;
   }
+
+.Autres_projets__img{
+  text-align: center;
+  width: 11em;
+  position: relative;
+  top: -150px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: var(--legende);
+  color: var(--figcaption);
+}
+
+/* Bug IOS
+=> L'overflow doit être appliqué sur l'élément body ET html
+pour faire disparaître le scroll sur safari IOS */
+.noscroll,
+.noscroll body {
+overflow: hidden;
+}

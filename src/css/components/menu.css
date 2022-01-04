@@ -17,15 +17,15 @@
   .menu__heading{
     font-size: var(--menu);
     text-align: center;
-    width: 11em;
+    width: 14em;
     position: relative;
-    top: -150px;
+    top: -80px;
    }
 
   .menu__item--logo{
     position: relative;
-    top: -75px;
-    left: -30px;
+    top: 7px;
+    left: 10px;
   }
 
   .menu--open {
@@ -40,7 +40,7 @@
   }
   
   .menu__item {
-    margin-top: 0%;
+    margin-top: 0px;
   }
   
   .menu__link {
@@ -62,7 +62,7 @@
   .menu-btn__bar::before,
   .menu-btn__bar::after {
     content: '';
-    background: var(--grey);
+    background: var(--yellow);
     height: 2px;
     width: 100%;
     position: absolute;
@@ -80,11 +80,7 @@
   }
   
   .menu-btn--open .menu-btn__bar,
-  .menu-btn--open .menu-btn__bar::before{
-    background-color: var(--yellow);
-    transform: rotate(135deg);
-  }
-
+  .menu-btn--open .menu-btn__bar::before,
   .menu-btn--open .menu-btn__bar::after {
     background-color: var(--yellow);
     transform: rotate(135deg);

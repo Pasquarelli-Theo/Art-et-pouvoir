@@ -13,18 +13,15 @@
 <body>
  <!-- Entête de la page -->
 
- <div id="header">
+ <div>
     <header class="header" 
                 :class="atTop && 'header--atTop'"
                 @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
     
           <div class="header__start">
               <img src="public/icones/building_logo.svg" alt="Logo du site Art & Pouvoir">
-          <h1>Art & Pouvoir</h1>
-          <h2>Le Loup de Wall Street
-             <br>Le film</h2>
-             <img src="public/icones/icone_film.svg" alt="Icone de film">
-             <p>Martin Scorsese</p>
+          <h1 class="header__title">Art & Pouvoir</h1>
+          <h2 class="header__title2">Autres projets</h2>
           </div>
     
           <div class="header__end">
@@ -64,3 +61,42 @@
         <!-- Contenu principal -->
 
         <main>
+          <p>Onze de mes camarades de classe se sont également penchés sur la problématique du livre augmenté. Si vous avez aimé mon projet, je vous encourage vivement à jeter un oeil aux leurs. Ils sont tous plus originaux les uns que les autres !</p>
+         
+        <div class="Autres_projets__img">
+          <img src="public/icones/AGORIA.svg" alt="Logo du site Agoria">
+          <img src="public/icones/Madness_of_mangas.svg" alt="Logo du site Madness of mangas">
+          <img src="public/icones/Le_guide_du_tueur.svg" alt="Logo du site Le guide du tueur">
+          <img src="public/icones/HorriFying.svg" alt="Logo du site HorriFying">
+          <img src="public/icones/Odyssia.svg" alt="Logo du site Odyssia">
+          <img src="public/icones/Ecosys.svg" alt="Logo du site Ecosys'Terre">
+          <img src="public/icones/Imaginaire.svg" alt="Logo du site Imaginaire : échappatoire du réel">
+          <img src="public/icones/Red_poems.svg" alt="Logo du site Red Poems">
+          <img src="public/icones/Shine_Art.svg" alt="Logo du site Shine Art">
+          <img src="public/icones/Non_mais_allo.svg" alt="Logo du site Non mais allo ?">
+          <img src="public/icones/Des_secrets_enfouis_sous_Paris.svg" alt="Logo du site Des secret enfouis sous Paris">
+        </div>
+
+        <!--Fin du contenu principal-->
+
+<footer class="footer">
+    <p>PierrePolJ</p>
+
+    <div>
+        <p>Me suivre : </p>
+        <ul class="footer__list list-unstyled">
+          <li><a target="_blank" href="https://facebook.com" aria-label="facebook"><img src="public/icones/fb.svg" alt="icone facebook"></a></li>
+          <li><a target="_blank" href="https://twitter.com" aria-label="twitter"><img src="public/icones/twitter.svg" alt="icone twitter"></a></li>
+          <li><a target="_blank" href="https://instagram.com" aria-label="instagram"><img src="public/icones/insta.svg" alt="icone instagram"></a></li>
+          <li><a target="_blank" href="http://mmimontbeliard.com/" aria-label="mmi"><img src="public/icones/icon_mmi.svg" alt="icone MMI Montbéliard"></a></li>
+        </ul>
+    </div>
+
+    <p>Pour me contacter par mail, cliquez ici</p>
+    <img src="public/icones/Line_footer.svg" alt="Ligne de séparation jaune">
+    <p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMi de Montbéliard.</p>
+
+
+
+    </body>
+    </html>

@@ -1,0 +1,7 @@
+.footer {
+    background-color: var(--dark-gray);
+    color: var(--yellow);
+    padding: var(--space4x) var(--space3x);
+    font-size: var(--footer);
+    margin: -2%;
+  }
