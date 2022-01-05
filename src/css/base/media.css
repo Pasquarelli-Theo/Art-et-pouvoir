@@ -3,13 +3,6 @@ img {
     height: auto;
   }
 
-.Autres_projets__img{
-  text-align: center;
-  width: 11em;
-  position: relative;
-  top: -150px;
-}
-
 figure {
   margin: 0;
 }
@@ -17,6 +10,33 @@ figure {
 figcaption {
   font-size: var(--legende);
   color: var(--figcaption);
+}
+
+.Autres_projets__img{
+  text-align: center;
+  width: 28em;
+  position: relative;
+  top: 30px;
+  margin-bottom: 60px;
+}
+
+.header__icon{
+  position: relative;
+  top: -9px;
+  right: -162px;
+}
+
+.homepage__item--logo{
+  position: relative;
+  top: 75px;
+  width: 11em;
+}
+
+.homepage__item--arrow{
+  text-align: center;
+  width: 25em;
+  position: relative;
+  top: 380px;
 }
 
 /* Bug IOS

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,10 +29,10 @@
           <div class="header__start">
               <img src="public/icones/building_logo.svg" alt="Logo du site Art & Pouvoir">
           <h1 class="header__title">Art & Pouvoir</h1>
-          <h2 class="header__title2">Le Loup de Wall Street
-             <br>Le film</h2>
-             <img src="public/icones/icone_film.svg" alt="Icone de film">
-             <p>Martin Scorsese</p>
+          <h2 class="header__title2">Le Loup de Wall Street</h2>
+             <br><h2 class="header__subtitle"><i>Le film</i></h2>
+             <div class="header__icon"><img src="public/icones/icone_film.svg" alt="Icone de film"></div>
+             <h2 class="header__autor"><i>Martin Scorsese</i></h2>
           </div>
     
           <div class="header__end">
@@ -46,21 +46,31 @@
           <!-- Menu principal -->
   
           <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-            <ul class="menu__list list-unstyled">
-              <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Article_Central_Park.html">Central Park</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Article_Art_NY.html">L'art à New York</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Autres_projets.html">Autres projets</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Contact.html">Contact</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-            </ul>
-          </nav>
+            <div class="menu__item--logo"><img src="public/icones/building_logo.svg" alt="Logo de Art et Pouvoir"></div>
+               <h1 class="menu__heading">Art & Pouvoir</h1> 
+             <ul class="menu__list list-unstyled">
+               <img src="public/icones/Line_grey.svg" alt="Lignes horizontales grise">
+               <li class="menu__item">
+                 <a class="menu__link" href="Index.html">Accueil</a>
+               </li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Article_Central_Park.html">Central Park<br><i>Le livre</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street<br><i>Le livre</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Article_Art_NY.html">L'art à New York<br><i>Le film</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Autres_projets.html">Autres projets<br><i>Le mini-guide</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Contact.html">Contact</a></li>
+             </ul>
+             <img src="public/icones/Line_grey.svg" alt="Lignes horizontales grise">
+           </nav>
     
     <!-- Fin du menu principal -->
             
@@ -123,23 +133,23 @@
         
         <h2>D'AUTRES FILMS DE MARTIN SCORSESE :</h2>
        <img src="public/icones/Line_yellow.svg" alt="Ligne de séparation jaune">
-       <img src="public/img/" alt="Affiche du film Casino">
+       <img src="public/img/Casino.webp" alt="Affiche du film Casino">
        <figcaption> Casino </figcaption>
-       <img src="public/img/" alt="Affiche du film Les Affranchis">
+       <img src="public/img/Les_Affranchis.webp" alt="Affiche du film Les Affranchis">
        <figcaption> Les Affrranchis </figcaption>
-       <img src="public/img/" alt="Affiche du film Infiltrés">
+       <img src="public/img/Les_Infiltres.webp" alt="Affiche du film Infiltrés">
        <figcaption> Infiltrés </figcaption>
-       <img src="public/img/" alt="Affiche du film Gang of New York">
+       <img src="public/img/Gangs_of_New_York.webp" alt="Affiche du film Gang of New York">
        <figcaption> Gang of New<br>York </figcaption>
-       <img src="public/img/" alt="Affiche du film Taxi Driver">
+       <img src="public/img/Taxi_Driver.webp" alt="Affiche du film Taxi Driver">
        <figcaption> Taxi Driver </figcaption>
-       <img src="public/img/" alt="Affiche du film Shutter Island">
+       <img src="public/img/Shutter_Island.webp" alt="Affiche du film Shutter Island">
        <figcaption> Shutter Island </figcaption>
-       <img src="public/img/" alt="Affiche du film Raging Bull">
+       <img src="public/img/Raging_Bull.webp" alt="Affiche du film Raging Bull">
        <figcaption> Raging Bull </figcaption>
-       <img src="public/img/" alt="Affiche du film "Mean Street>
+       <img src="public/img/Mean_Streets.webp" alt="Affiche du film Mean Street">
        <figcaption> Mean Street </figcaption>
-       <img src="public/img/" alt="Affiche du film Les Nerfs à vif">
+       <img src="public/img/Les_Nerfs_a_vif.webp" alt="Affiche du film Les Nerfs à vif">
        <figcaption> Les Nerfs à vif </figcaption>
 
         <p>Pour en savoir plus sur les meilleurs films de

@@ -8,10 +8,13 @@
     padding: var(--space1x);
     display: flex;
     justify-content: space-between;
+    height: 350px;
   }
   
   .header__2 {
     background-image: url("/public/img/Photo_accueil.webp");
+    background-repeat: no-repeat;
+    background-position: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,12 +30,22 @@
     position: relative;
     top: -80px;
   }
+
+  .header__middle {
+    position: relative;
+    right: 60%;
+
+   /* gap: var(--space2x);
+    position: relative;
+    top: 0px;*/
+  }
   
   .header__end {
     display: flex;
     gap: var(--space2x);
     position: relative;
     top: -275px;
+    right: 129px;
   }
   
   .header__logo {

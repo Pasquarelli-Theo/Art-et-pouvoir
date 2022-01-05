@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art & Pouvoir - Autres projets</title>
+    
+    <!-- Chargement de la librairie Alpine JS -->
 
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <!-- Chargement de la librairie Anime JS -->
+    
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    
     <!-- Déclaration de la feuille de style -->
 
     <link rel="stylesheet" href="src/css/style.css">
@@ -20,8 +28,8 @@
     
           <div class="header__start">
               <img src="public/icones/building_logo.svg" alt="Logo du site Art & Pouvoir">
-          <h1 class="header__title">Art & Pouvoir</h1>
-          <h2 class="header__title2">Autres projets</h2>
+              <h1 class="header__title">Art & Pouvoir</h1>
+              <h2 class="header__title2">Autres projets</h2>
           </div>
     
           <div class="header__end">
@@ -35,21 +43,31 @@
           <!-- Menu principal -->
   
           <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-            <ul class="menu__list list-unstyled">
-              <li class="menu__item"><a class="menu__link" href="Index.html">Accueil</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Article_Central_Park.html">Central Park</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Article_Art_NY.html">L'art à New York</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Autres_projets.html">Autres projets</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-              <li class="menu__item"><a class="menu__link" href="Contact.html">Contact</a></li>
-              <img src="public/icones/line_menu.svg" alt="Lignes horizontales">
-            </ul>
-          </nav>
+            <div class="menu__item--logo"><img src="public/icones/building_logo.svg" alt="Logo de Art et Pouvoir"></div>
+               <h1 class="menu__heading">Art & Pouvoir</h1> 
+             <ul class="menu__list list-unstyled">
+               <img src="public/icones/Line_grey.svg" alt="Lignes horizontales grise">
+               <li class="menu__item">
+                 <a class="menu__link" href="Index.html">Accueil</a>
+               </li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Article_Central_Park.html">Central Park<br><i>Le livre</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street<br><i>Le livre</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Article_Art_NY.html">L'art à New York<br><i>Le film</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Autres_projets.html">Autres projets<br><i>Le mini-guide</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Contact.html">Contact</a></li>
+             </ul>
+             <img src="public/icones/Line_grey.svg" alt="Lignes horizontales grise">
+           </nav>
     
     <!-- Fin du menu principal -->
             

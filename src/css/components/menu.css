@@ -24,7 +24,7 @@
 
   .menu__item--logo{
     position: relative;
-    top: 7px;
+    top: -50px;
     left: 10px;
   }
 
@@ -53,6 +53,7 @@
     position: relative;
     z-index: 3;
     width: 30px;
+    top: 0px;
     appearance: none;
     background: none;
     border: none; 
