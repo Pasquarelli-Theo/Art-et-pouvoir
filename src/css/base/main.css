@@ -11,13 +11,22 @@ body {
     background-color: var(--grey);
   }
 
+main{
+  margin-top: 380px;
+}
+
+.homepage__main{
+  margin-top: 620px;
+}
+
 h1 {
   font-family: var(--font-title-site);
+  font-size: var(--title_site);
   color: var(--yellow);
   text-align: center;
   position: relative;
-  top: 300px;
-  width: 12em
+  width: -2em;
+  top: 200px;
 }
 
 h2{
@@ -32,7 +41,8 @@ h3{
 .header__title{
   font-size: var(--header_title2);
   text-align: center;
-  width: 12em
+  width: 12em;
+  top: 0px;
 }
 
 .header__title2{
@@ -49,6 +59,14 @@ h3{
   top: 0px;
   font-size: var(--header_subtitle);
   width: 12em
+}
+
+.header__autor{
+  text-align: center;
+  position: relative;
+  top: 0px;
+  font-size: var(--title);
+  width: 14em
 }
 
 .home__title{
