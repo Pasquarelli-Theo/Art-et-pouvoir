@@ -17,6 +17,8 @@
     <!-- Déclaration de la feuille de style -->
 
     <link rel="stylesheet" href="src/css/style.css">
+
+    <script src="src/js/carrousel.js"></script>
 </head>
 <body>
  <!-- Entête de la page -->
@@ -43,38 +45,36 @@
                 <span class="menu-btn__bar"></span>
             </button>
       
-                      <!-- Menu principal -->
-        
-                      <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-                        <div class="menu__item--logo"><img src="public/icones/building_logo.svg" alt="Logo de Art et Pouvoir"></div>
-                           <h1 class="menu__heading">Art & Pouvoir</h1> 
-                         <ul class="menu__list list-unstyled">
-                           <img src="public/icones/Line_grey.svg" alt="Lignes horizontales grise">
-                           <li class="menu__item">
-                             <a class="menu__link" href="Index.html">Accueil</a>
-                           </li>
-                           <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
-                           <li class="menu__item">
-                             <a class="menu__link" href="Article_Central_Park.html">Central Park<br><i>Le livre</i></a></li>
-                           <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
-                           <li class="menu__item">
-                             <a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street<br><i>Le livre</i></a></li>
-                           <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
-                           <li class="menu__item">
-                             <a class="menu__link" href="Article_Art_NY.html">L'art à New York<br><i>Le film</i></a></li>
-                           <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
-                           <li class="menu__item">
-                             <a class="menu__link" href="Autres_projets.html">Autres projets<br><i>Le mini-guide</i></a></li>
-                           <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
-                           <li class="menu__item">
-                             <a class="menu__link" href="Contact.html">Contact</a></li>
-                         </ul>
-                         <img src="public/icones/Line_grey.svg" alt="Lignes horizontales grise">
-                       </nav>
+          <!-- Menu principal -->
+
+          <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <div class="menu__item--logo"><img src="public/icones/building_logo.svg" alt="Logo de Art et Pouvoir"></div>
+               <h1 class="menu__heading">Art & Pouvoir</h1> 
+             <ul class="menu__list list-unstyled">
+               <img src="public/icones/Line_grey.svg" alt="Lignes horizontales grise">
+               <li class="menu__item">
+                 <a class="menu__link" href="Index.html">Accueil</a>
+               </li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Article_Central_Park.html">Central Park<br><i>Le livre</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Article_Loup_de_WS.html">Le Loup de Wall Street<br><i>Le livre</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                  <a class="menu__link" href="Article_Art_NY.html">L'art à New York<br><i>Le film</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Autres_projets.html">Autres projets<br><i>Le mini-guide</i></a></li>
+               <img src="public/icones/line_menu.svg" alt="Lignes horizontales jaunes">
+               <li class="menu__item">
+                 <a class="menu__link" href="Contact.html">Contact</a></li>
+             </ul>
+             <img src="public/icones/Line_grey.svg" alt="Lignes horizontales grise">
+           </nav>
     
     <!-- Fin du menu principal -->
-            
-    
     
         </div>
         </header>
@@ -150,7 +150,21 @@
         
         <h2>D'AUTRES LIVRES DE GUILLAUME MUSSO :</h2>
         <img src="public/icones/Line_yellow.svg" alt="Ligne de séparation jaune">
-                CARROUSEL
+        
+        <div class="carrousel-grid carrousel">
+        <!--carrousel-->
+
+          <div class="carrousel">
+            <div class="images4">
+              <img id="img1" class="image4" src="public/img/et_apres.webp" alt="Couverture de Et après de Guillaume Musso">
+              <img id="img2" class="image4" src="public/img/seras_tu_la.webp" alt="Couverture de Seras-tu là ? de Guillaume Musso">
+              <img id="img3" class="image4" src="public/img/la_fille_de_papier.webp" alt="Couverture de La Fille de papier de Guillaume Musso">
+              <img id="img4" class="image4" src="public/img/demain.webp" alt="Couverture de Demain de Guillaume Musso">
+            </div>
+          </div>
+        <script>carrousel()</script>
+          
+      </div>
 
         <p>Pour en savoir plus sur Guillaume Musso et<br>
                     découvrir l'intégralité de ses oeuvres, cliquez ici !</p>

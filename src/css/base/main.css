@@ -89,6 +89,9 @@ h3{
   width: 6em
 }
 
+
+sticky
+
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
 button {
   -webkit-appearance: none;

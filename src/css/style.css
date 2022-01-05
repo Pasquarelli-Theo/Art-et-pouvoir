@@ -22,3 +22,7 @@
 /* Components */
 @import "components/menu.css";
 @import "components/button.css";
+@import "components/carrousel.css";
+
+/* JavaScript*/
+@import url("/src/js/carrousel.js");
