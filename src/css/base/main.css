@@ -88,9 +88,12 @@ h3{
   text-align: center;
   width: 6em
 }
-
-
-sticky
+  
+figcaption {
+  font-size: var(--legende);
+  color: var(--figcaption);
+  position: sticky;
+}
 
 /* permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
 button {

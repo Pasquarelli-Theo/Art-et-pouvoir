@@ -7,11 +7,6 @@ figure {
   margin: 0;
 }
 
-figcaption {
-  font-size: var(--legende);
-  color: var(--figcaption);
-}
-
 .Autres_projets__img{
   text-align: center;
   width: 28em;
